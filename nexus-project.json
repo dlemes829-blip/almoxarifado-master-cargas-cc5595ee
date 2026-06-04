@@ -2,7 +2,7 @@
   "id": "proj_almoxarifado-master-cargas-main_active",
   "name": "Almoxarifado Master Cargas",
   "kind": "fullstack",
-  "status": "failed",
+  "status": "deployed",
   "summary": "Melhoria aplicada: melhore muito a interface",
   "active": true,
   "sourcePath": "C:\\Users\\danie\\OneDrive\\DANIEL - PESSOAL\\01_PROJETOS_DEV\\almoxarifado\\almoxarifado-master-cargas-main (1)\\almoxarifado-master-cargas-main",
@@ -202,10 +202,24 @@
       "status": "done",
       "detail": "Repositorio almoxarifado-master-cargas-cc5595ee enviado.",
       "at": "2026-06-04T15:14:31.051Z"
+    },
+    {
+      "id": "6df4aac3",
+      "label": "GitHub preparado",
+      "status": "done",
+      "detail": "Repositorio almoxarifado-master-cargas-cc5595ee enviado.",
+      "at": "2026-06-04T15:21:12.398Z"
+    },
+    {
+      "id": "3d5d62d4",
+      "label": "Deploy preparado",
+      "status": "done",
+      "detail": "https://almoxarifado-master-cargas-n-active.onrender.com",
+      "at": "2026-06-04T15:21:12.455Z"
     }
   ],
   "createdAt": "2026-06-04T01:29:34.519Z",
-  "updatedAt": "2026-06-04T15:14:31.061Z",
+  "updatedAt": "2026-06-04T15:21:12.465Z",
   "files": [
     ".env.example",
     ".gitignore",
@@ -423,13 +437,13 @@
         "command": "git add .",
         "ok": true,
         "status": 0,
-        "output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'GITHUB_READY.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'nexus-project.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'server/index.ts', LF will be replaced by CRLF the next time Git touches it"
+        "output": "warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'GITHUB_READY.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'nexus-project.json', LF will be replaced by CRLF the next time Git touches it"
       },
       {
         "command": "git commit -m Initial Agent Nexus project",
         "ok": true,
         "status": 0,
-        "output": "[main 8439c4e] Initial Agent Nexus project\n 2 files changed, 22 insertions(+), 13 deletions(-)"
+        "output": "[main 616c51f] Initial Agent Nexus project\n 1 file changed, 11 insertions(+), 4 deletions(-)"
       },
       {
         "command": "git branch -M main",
@@ -483,7 +497,7 @@
         "command": "git push -u origin HEAD:main",
         "ok": true,
         "status": 0,
-        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git/main'.\nTo https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git\n   424d322..8439c4e  HEAD -> main"
+        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git/main'.\nTo https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git\n   8439c4e..616c51f  HEAD -> main"
       },
       {
         "command": "git remote get-url origin",
@@ -494,6 +508,14 @@
     ]
   },
   "deployments": [
+    {
+      "id": "cc6e9a71-312a-4835-a1d3-764e73e40adb",
+      "provider": "render",
+      "publicUrl": "https://almoxarifado-master-cargas-n-active.onrender.com",
+      "dashboardUrl": "https://dashboard.render.com/web/srv-d8gp5s0jo6nc73eqruj0",
+      "status": "existing",
+      "createdAt": "2026-06-04T15:21:12.455Z"
+    },
     {
       "id": "srv-d8gp5s0jo6nc73eqruj0",
       "provider": "render",
