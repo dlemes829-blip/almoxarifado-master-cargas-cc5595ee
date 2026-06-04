@@ -1,0 +1,398 @@
+Crie um sistema web fullstack profissional de Gestão de Estoque com controle total de usuários, permissões avançadas, histórico completo de ações e painel de ranking.
+
+🏗 STACK OBRIGATÓRIA
+
+Frontend:
+
+React
+
+Tailwind CSS
+
+React Router
+
+Axios
+
+Context API
+
+Backend:
+
+Node.js
+
+Express
+
+JWT
+
+Bcrypt
+
+Banco de Dados:
+
+PostgreSQL
+
+Extras:
+
+Socket.io (chat tempo real)
+
+Estrutura pronta para deploy
+
+Variáveis de ambiente (.env)
+
+🔐 SISTEMA DE LOGIN
+Login obrigatório
+
+Usuário principal (SUPER ADMIN):
+
+Usuário: DEV
+Senha: 120605
+
+Esse usuário:
+
+Acesso total ao sistema
+
+Não pode ser excluído
+
+Pode redefinir permissões
+
+Pode resetar sistema
+
+Pode cadastrar e excluir usuários
+
+Pode ver todo histórico
+
+⚠ Login deve ser case insensitive
+
+Exemplo válido:
+
+daniel
+
+Daniel
+
+DANIEL
+
+Implementar comparação ignorando maiúsculas/minúsculas no backend.
+
+👥 CONTROLE DE USUÁRIOS (ABA EXCLUSIVA "USUÁRIOS")
+
+Criar uma aba chamada:
+
+📁 Usuários
+
+Somente ADMIN pode acessar.
+
+Funcionalidades:
+
+Cadastrar usuário
+
+Editar usuário
+
+Ativar/Desativar usuário
+
+Definir permissões individuais
+
+Excluir usuário (exceto DEV)
+
+🔐 Permissões configuráveis por usuário
+
+Cada usuário deve ter permissões booleanas:
+
+pode_ver_dashboard
+
+pode_ver_produtos
+
+pode_registrar_entrada
+
+pode_registrar_saida
+
+pode_ver_historico
+
+pode_ver_chat
+
+pode_exportar_relatorio
+
+pode_gerenciar_usuarios
+
+Permissões armazenadas no banco.
+
+🚫 Se usuário tentar acessar algo sem permissão
+
+Exibir tela:
+
+⚠ Acesso Restrito
+
+Você ainda não possui autorização para registrar saídas de materiais.
+Solicite a liberação ao administrador do sistema.
+
+Contato: DEV
+
+Bloquear backend também (middleware de permissão).
+
+📦 PRODUTOS
+
+Tabela Produtos:
+
+id
+
+codigo_barras
+
+nome
+
+categoria
+
+quantidade_atual
+
+unidade
+
+localizacao
+
+estoque_minimo
+
+ativo
+
+data_cadastro
+
+criado_por
+
+Somente quem tiver permissão pode cadastrar.
+
+🔄 MOVIMENTAÇÕES
+
+Tabela Movimentacoes:
+
+id
+
+produto_id
+
+tipo (entrada / saida)
+
+quantidade
+
+usuario_id
+
+data_hora
+
+observacao
+
+Regras:
+Entrada
+
+Soma quantidade
+
+Registra movimentação
+
+Atualiza saldo
+
+Saída
+
+Verifica saldo
+
+Se insuficiente → bloquear
+
+Subtrai
+
+Registra movimentação
+
+📜 ABA HISTÓRICO
+
+Criar aba:
+
+📁 Histórico
+
+Registrar absolutamente tudo:
+
+Login
+
+Logout
+
+Cadastro de produto
+
+Entrada
+
+Saída
+
+Exclusão
+
+Alteração de permissão
+
+Cadastro de usuário
+
+Tabela Historico:
+
+id
+
+usuario
+
+acao
+
+modulo
+
+descricao
+
+data_hora
+
+ip
+
+Filtros:
+
+Por usuário
+
+Por período
+
+Por tipo de ação
+
+📊 DASHBOARD COMPLETO
+
+Painel principal deve conter:
+
+Cards:
+
+Total de Produtos
+
+Total em Estoque
+
+Produtos com estoque baixo
+
+Entradas hoje
+
+Saídas hoje
+
+Usuários ativos
+
+🏆 PAINEL RANKING (DENTRO DO DASHBOARD)
+
+Adicionar seção:
+
+Ranking de Movimentações
+
+Mostrar:
+
+Usuário que mais registrou entradas
+
+Usuário que mais registrou saídas
+
+Top 5 usuários mais ativos
+
+Produto mais movimentado
+
+Produto com menor estoque
+
+Gráfico com:
+
+Entradas x Saídas por período
+
+Ranking em tabela
+
+📤 RELATÓRIOS
+
+Exportar:
+
+Excel
+
+PDF
+
+Por:
+
+Categoria
+
+Período
+
+Usuário
+
+Produto
+
+Somente usuários com permissão.
+
+💬 CHAT EM TEMPO REAL
+
+Chat global via Socket.io:
+
+Nome do usuário
+
+Mensagem
+
+Data/hora
+
+Indicador online
+
+Notificação visual
+
+🎨 DESIGN
+
+Tema moderno SaaS
+
+Cores:
+
+Verde escuro principal: #0f3d2e
+
+Verde destaque
+
+Vermelho alerta
+
+Características:
+
+Layout profissional
+
+Responsivo
+
+Sidebar fixa
+
+Dashboard moderno
+
+Modo escuro padrão
+
+Animações suaves
+
+Interface limpa
+
+🔐 SEGURANÇA
+
+Senhas com Bcrypt
+
+JWT com expiração
+
+Middleware de autenticação
+
+Middleware de permissão
+
+Proteção de rotas
+
+Validação backend
+
+Sanitização de dados
+
+🧱 ESTRUTURA DO PROJETO
+
+Separar:
+
+/backend
+/frontend
+
+Criar API REST organizada:
+
+/api/auth
+/api/users
+/api/products
+/api/movements
+/api/history
+/api/dashboard
+
+Banco configurado automaticamente.
+
+📌 REGRAS IMPORTANTES
+
+Usuário DEV nunca pode ser excluído
+
+Login ignora maiúsculas/minúsculas
+
+Todas ações registradas no histórico
+
+Permissões verificadas no backend
+
+Sistema pronto para deploy
+
+Código limpo e organizado
+
+Comentários explicativos
+
+🔥 OBJETIVO FINAL
+
+Criar um sistema profissional, seguro, escalável e pronto para uso empresarial, com controle total de usuários, rastreamento completo e painel inteligente de análise.
+

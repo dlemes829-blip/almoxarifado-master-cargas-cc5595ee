@@ -1,0 +1,17 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gzprojeto.zip
+projeto.zip
+*.zip
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+.expo/
+web-build/
+*.log
