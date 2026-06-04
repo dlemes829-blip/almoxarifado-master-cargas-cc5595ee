@@ -86,7 +86,7 @@ app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
 if (process.env.NODE_ENV === "production") {
   serveStatic(app);
 
-  const primaryPort = parseInt(process.env.PORT || "5000", 10);
+  const primaryPort = 5000;
   httpServer.listen({ port: primaryPort, host: "0.0.0.0" }, () => {
     log(`serving on port ${primaryPort}`);
     process.nextTick(() => {
@@ -94,16 +94,14 @@ if (process.env.NODE_ENV === "production") {
     });
   });
 
-  if (process.env.NEXUS_ENABLE_SECONDARY_HEALTH === "1") {
-    const healthApp = express();
-    healthApp.get("/", (_req, res) => res.status(200).send("OK"));
-    healthApp.get("/health", (_req, res) => res.status(200).send("OK"));
-    healthApp.all("/{*path}", (_req, res) => res.status(200).send("OK"));
-    const healthServer = createServer(healthApp);
-    healthServer.listen({ port: 3333, host: "0.0.0.0" }, () => {
-      log(`health check server on port 3333`);
-    });
-  }
+  const healthApp = express();
+  healthApp.get("/", (_req, res) => res.status(200).send("OK"));
+  healthApp.get("/health", (_req, res) => res.status(200).send("OK"));
+  healthApp.all("/{*path}", (_req, res) => res.status(200).send("OK"));
+  const healthServer = createServer(healthApp);
+  healthServer.listen({ port: 3333, host: "0.0.0.0" }, () => {
+    log(`health check server on port 3333`);
+  });
 } else {
   (async () => {
     const { setupVite } = await import("./vite");
