@@ -7,7 +7,7 @@
   "active": true,
   "sourcePath": "C:\\Users\\danie\\OneDrive\\DANIEL - PESSOAL\\01_PROJETOS_DEV\\almoxarifado\\almoxarifado-master-cargas-main (1)\\almoxarifado-master-cargas-main",
   "externalPreviewUrl": "http://localhost:5001",
-  "liveUrl": "http://localhost:5001",
+  "liveUrl": "https://almoxarifado-master-cargas-n-active.onrender.com",
   "downloadUrl": "/api/agent-nexus/projects/proj_almoxarifado-master-cargas-main_active/download",
   "previewUrl": "/api/agent-nexus/projects/proj_almoxarifado-master-cargas-main_active/preview",
   "validation": {
@@ -174,10 +174,24 @@
       "status": "done",
       "detail": "Repositorio almoxarifado-master-cargas-cc5595ee enviado.",
       "at": "2026-06-04T14:54:49.877Z"
+    },
+    {
+      "id": "2da83168",
+      "label": "GitHub preparado",
+      "status": "done",
+      "detail": "Repositorio almoxarifado-master-cargas-cc5595ee enviado.",
+      "at": "2026-06-04T15:00:00.552Z"
+    },
+    {
+      "id": "6492ccea",
+      "label": "Deploy preparado",
+      "status": "done",
+      "detail": "https://almoxarifado-master-cargas-n-active.onrender.com",
+      "at": "2026-06-04T15:00:03.107Z"
     }
   ],
   "createdAt": "2026-06-04T01:29:34.519Z",
-  "updatedAt": "2026-06-04T14:54:49.891Z",
+  "updatedAt": "2026-06-04T15:00:03.118Z",
   "files": [
     ".env.example",
     ".gitignore",
@@ -401,7 +415,7 @@
         "command": "git commit -m Initial Agent Nexus project",
         "ok": true,
         "status": 0,
-        "output": "[main 1a72255] Initial Agent Nexus project\n 1 file changed, 60 insertions(+), 11 deletions(-)"
+        "output": "[main 978afc6] Initial Agent Nexus project\n 1 file changed, 35 insertions(+), 10 deletions(-)"
       },
       {
         "command": "git branch -M main",
@@ -442,8 +456,8 @@
       {
         "command": "GitHub API create fallback repository almoxarifado-master-cargas-cc5595ee",
         "ok": true,
-        "status": 201,
-        "output": "Repository created: https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee"
+        "status": 422,
+        "output": "Repository already exists or name is reserved: https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee"
       },
       {
         "command": "git remote set-url origin https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git",
@@ -455,7 +469,7 @@
         "command": "git push -u origin HEAD:main",
         "ok": true,
         "status": 0,
-        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git/main'.\nTo https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git\n * [new branch]      HEAD -> main"
+        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git/main'.\nTo https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git\n   1a72255..978afc6  HEAD -> main"
       },
       {
         "command": "git remote get-url origin",
@@ -464,5 +478,15 @@
         "output": "https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git"
       }
     ]
-  }
+  },
+  "deployments": [
+    {
+      "id": "srv-d8gp5s0jo6nc73eqruj0",
+      "provider": "render",
+      "publicUrl": "https://almoxarifado-master-cargas-n-active.onrender.com",
+      "dashboardUrl": "https://dashboard.render.com/web/srv-d8gp5s0jo6nc73eqruj0",
+      "status": "created",
+      "createdAt": "2026-06-04T15:00:03.107Z"
+    }
+  ]
 }
