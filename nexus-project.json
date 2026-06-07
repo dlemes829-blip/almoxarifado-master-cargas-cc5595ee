@@ -2,12 +2,12 @@
   "id": "proj_almoxarifado-master-cargas-main_active",
   "name": "Almoxarifado Master Cargas",
   "kind": "fullstack",
-  "status": "failed",
+  "status": "deployed",
   "summary": "Arquivo editado manualmente: docs/nexus-capabilities.json",
   "active": true,
   "sourcePath": "C:\\Users\\danie\\OneDrive\\DANIEL - PESSOAL\\01_PROJETOS_DEV\\almoxarifado\\almoxarifado-master-cargas-main (1)\\almoxarifado-master-cargas-main",
   "externalPreviewUrl": "http://localhost:5001",
-  "liveUrl": "http://localhost:5001",
+  "liveUrl": "https://dlemes829-blip.github.io/almoxarifado-master-cargas-cc5595ee/",
   "downloadUrl": "/api/agent-nexus/projects/proj_almoxarifado-master-cargas-main_active/download",
   "previewUrl": "/api/agent-nexus/projects/proj_almoxarifado-master-cargas-main_active/preview",
   "validation": {
@@ -125,10 +125,24 @@
       "status": "failed",
       "detail": "5/5 ciclo(s)",
       "at": "2026-06-07T18:07:08.490Z"
+    },
+    {
+      "id": "b3d3e996",
+      "label": "GitHub preparado",
+      "status": "done",
+      "detail": "Repositorio almoxarifado-master-cargas-cc5595ee enviado.",
+      "at": "2026-06-07T18:25:55.375Z"
+    },
+    {
+      "id": "90463b30",
+      "label": "Deploy preparado",
+      "status": "done",
+      "detail": "https://dlemes829-blip.github.io/almoxarifado-master-cargas-cc5595ee/",
+      "at": "2026-06-07T18:26:15.634Z"
     }
   ],
   "createdAt": "2026-06-07T18:06:36.154Z",
-  "updatedAt": "2026-06-07T18:07:08.509Z",
+  "updatedAt": "2026-06-07T18:26:15.673Z",
   "files": [
     ".env.example",
     ".gitignore",
@@ -265,10 +279,12 @@
     "client/src/pages/Solicitacoes.tsx",
     "client/src/pages/Users.tsx",
     "components.json",
+    "docs/.nojekyll",
     "docs/improvements/2026-06-04t04-22-37-485z.md",
     "docs/improvements/2026-06-04t04-23-03-929z.md",
     "docs/improvements/2026-06-04t05-12-04-284z.md",
     "docs/improvements/2026-06-07t18-07-05-946z.md",
+    "docs/index.html",
     "docs/nexus-capabilities.json",
     "docs/nexus-project-memory.json",
     "docs/nexus-project-memory.md",
@@ -307,5 +323,141 @@
     "uploads/avatars/avatar-1775657070911-14a5dadc.jpeg",
     "uploads/avatars/avatar-1775665058800-9c433db0.jpeg",
     "vite.config.ts"
+  ],
+  "github": {
+    "prepared": true,
+    "pushed": true,
+    "repoName": "almoxarifado-master-cargas-cc5595ee",
+    "repoUrl": "https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git",
+    "pages": {
+      "ok": true,
+      "status": 201,
+      "provider": "github_pages",
+      "url": "https://dlemes829-blip.github.io/almoxarifado-master-cargas-cc5595ee/",
+      "message": "GitHub Pages enabled from /docs."
+    },
+    "pagesUrl": "https://dlemes829-blip.github.io/almoxarifado-master-cargas-cc5595ee/",
+    "visibility": "public",
+    "projectDir": "C:\\Users\\danie\\OneDrive\\nexus-v4-final\\nexus\\engines\\runtime\\projects\\proj_almoxarifado-master-cargas-main_active",
+    "commands": [
+      "git init",
+      "git add .",
+      "git commit -m \"Initial Agent Nexus project\"",
+      "gh repo create almoxarifado-master-cargas-cc5595ee --public --source . --remote origin --push"
+    ],
+    "logs": [
+      {
+        "command": "git --version",
+        "ok": true,
+        "status": 0,
+        "output": "git version 2.54.0.windows.1"
+      },
+      {
+        "command": "git init",
+        "ok": true,
+        "status": 0,
+        "output": "Reinitialized existing Git repository in C:/Users/danie/OneDrive/nexus-v4-final/nexus/engines/runtime/projects/proj_almoxarifado-master-cargas-main_active/.git/"
+      },
+      {
+        "command": "git config user.name Agent Nexus",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git config user.email agent-nexus@nexus.local",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git add .",
+        "ok": true,
+        "status": 0,
+        "output": "warning: in the working copy of '.env.example', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'GITHUB_READY.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'NEXUS_IMPORTADO.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'nexus-project.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/improvements/2026-06-07t18-07-05-946z.md', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/index.html', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/nexus-capabilities.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/nexus-project-memory.json', LF will be replaced by CRLF the next time Git touches it\nwarning: in the working copy of 'docs/nexus-project-memory.md', LF will be replaced by CRLF the next time Git touches it"
+      },
+      {
+        "command": "git commit -m Initial Agent Nexus project",
+        "ok": true,
+        "status": 0,
+        "output": "[main 6c0130c] Initial Agent Nexus project\n 7 files changed, 511 insertions(+), 132 deletions(-)\n create mode 100644 docs/.nojekyll\n create mode 100644 docs/improvements/2026-06-07t18-07-05-946z.md\n create mode 100644 docs/index.html\n create mode 100644 docs/nexus-capabilities.json\n create mode 100644 docs/nexus-project-memory.json\n create mode 100644 docs/nexus-project-memory.md"
+      },
+      {
+        "command": "git branch -M main",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "gh --version",
+        "ok": false,
+        "status": null,
+        "output": ""
+      },
+      {
+        "command": "GitHub API create repository",
+        "ok": true,
+        "status": 422,
+        "output": "Repository already exists or name is reserved: https://github.com/dlemes829-blip/almoxarifado-master-cargas"
+      },
+      {
+        "command": "git remote",
+        "ok": true,
+        "status": 0,
+        "output": "origin"
+      },
+      {
+        "command": "git remote set-url origin https://github.com/dlemes829-blip/almoxarifado-master-cargas.git",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git push -u origin HEAD:main",
+        "ok": false,
+        "status": 1,
+        "output": "To https://github.com/dlemes829-blip/almoxarifado-master-cargas.git\n ! [rejected]        HEAD -> main (fetch first)\nerror: failed to push some refs to 'https://github.com/dlemes829-blip/almoxarifado-master-cargas.git'\nhint: Updates were rejected because the remote contains work that you do not\nhint: have locally. This is usually caused by another repository pushing to\nhint: the same ref. If you want to integrate the remote changes, use\nhint: 'git pull' before pushing again.\nhint: See the 'Note about fast-forwards' in 'git push --help' for details."
+      },
+      {
+        "command": "GitHub API create fallback repository almoxarifado-master-cargas-cc5595ee",
+        "ok": true,
+        "status": 422,
+        "output": "Repository already exists or name is reserved: https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee"
+      },
+      {
+        "command": "git remote set-url origin https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git",
+        "ok": true,
+        "status": 0,
+        "output": ""
+      },
+      {
+        "command": "git push -u origin HEAD:main",
+        "ok": true,
+        "status": 0,
+        "output": "branch 'main' set up to track 'https://x-access-token:[redacted]@github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git/main'.\nTo https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git\n   1988634..6c0130c  HEAD -> main"
+      },
+      {
+        "command": "git remote get-url origin",
+        "ok": true,
+        "status": 0,
+        "output": "https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git"
+      },
+      {
+        "command": "GitHub Pages enable",
+        "ok": true,
+        "status": 201,
+        "output": "GitHub Pages enabled from /docs."
+      }
+    ]
+  },
+  "deployments": [
+    {
+      "id": "ef484d6f-f0d6-4578-b84c-463830740e28",
+      "provider": "github_pages",
+      "publicUrl": "https://dlemes829-blip.github.io/almoxarifado-master-cargas-cc5595ee/",
+      "dashboardUrl": "https://github.com/dlemes829-blip/almoxarifado-master-cargas-cc5595ee.git",
+      "status": "live",
+      "createdAt": "2026-06-07T18:26:15.634Z"
+    }
   ]
 }
